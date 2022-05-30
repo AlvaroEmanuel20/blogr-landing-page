@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+
+<body>  
+
+  <header class="bg-header">
+    <nav>
+      <div class="nav-info">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.svg" alt="site logo">
+          </a>
+        </div>
+  
+        <div class="nav-links">
+  
+          <div class="dropdown">
+            <div onclick="dropDownDesktopManager('drop1')" class="drop-trigger">
+              <h3>Product</h3>
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+            <div class="drop-content">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integrations</a>
+            </div>
+          </div>
+  
+          <div class="dropdown">
+            <div onclick="dropDownDesktopManager('drop2')" class="drop-trigger">
+              <h3>Company</h3>
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+            <div class="drop-content">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
+  
+          <div class="dropdown">
+            <div onclick="dropDownDesktopManager('drop3')" class="drop-trigger">
+              <h3>Connect</h3>
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+            <div class="drop-content">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="nav-btns">
+        <a href="#">Login</a>
+        <button class="btn">Sign Up</button>
+      </div>
+      
+      <div class="menu-toggle">
+        <img id="hamburger" onclick="openMenu()" src="images/icon-hamburger.svg" alt="button menu toggle">
+        <img onclick="closeMenu()" id="close-icon" src="images/icon-close.svg" alt="button close menu toggle">
+      </div>
+
+      <div class="menu-mobile">
+
+        <div class="dropdown-mobile">
+          <div onclick="dropDownMobileManager('dropMobile1')" class="drop-trigger-mobile">
+            <h3>Product</h3>
+            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-up"></i>
+          </div>
+          <div class="drop-content-mobile">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integrations</a>
+          </div>
+        </div>
+
+        <div class="dropdown-mobile">
+          <div onclick="dropDownMobileManager('dropMobile2')" class="drop-trigger-mobile">
+            <h3>Company</h3>
+            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-up"></i>
+          </div>
+          <div class="drop-content-mobile">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+
+        <div class="dropdown-mobile">
+          <div onclick="dropDownMobileManager('dropMobile3')" class="drop-trigger-mobile">
+            <h3>Connect</h3>
+            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-up"></i>
+          </div>
+          <div class="drop-content-mobile">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="btns-mobile">
+          <a href="#">Login</a>
+          <button class="btn">Sign Up</button>
+        </div>
+
+      </div>
+
+    </nav>
+
+    <section>
+      <h1>A modern publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+      <div>
+        <button class="btn">Start for Free</button>
+        <button class="btn-outline">Learn More</button>
+      </div>
+    </section>
+  </header>
+
+  <section id="first-section">
+    <h2>Designed for the future</h2>
+    <div class="container">
+
+      <div class="texts">
+        <div class="text">
+          <h3>Introducing an extensible editor</h3>
+          <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.</p>
+        </div>
+
+        <div class="text">
+          <h3>Robust content management</h3>
+          <p>Flexible content management enables users to easily move through posts. Increase the usability of 
+            your blog by adding customized categories, sections, format, or flow. With this functionality, you’re 
+            in full control.</p>
+        </div>
+      </div>
+
+      <div class="image">
+        <picture>
+          <source media="(min-width:68rem)" srcset="images/illustration-editor-desktop.svg">
+          <source media="(max-width:67rem)" srcset="images/illustration-editor-mobile.svg">
+          <img src="images/illustration-editor-desktop.svg" alt="Editor" style="width:auto;">
+        </picture>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="second-section" class="bg-blue-gradient">
+    <div class="container">
+      <div class="phones">
+        <img src="images/illustration-phones.svg" alt="phones">
+      </div>
+
+      <div class="text">
+        <h2>State of the Art Infrastructure</h2>
+        <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="third-section">
+    <div class="container">
+
+      <div class="image">
+        <picture>
+          <source media="(min-width:68rem)" srcset="images/illustration-laptop-desktop.svg">
+          <source media="(max-width:60rem)" srcset="images/illustration-laptop-mobile.svg">
+          <img src="images/illustration-laptop-desktop.svg" alt="Laptop" style="width:auto;">
+        </picture>
+      </div>
+
+      <div class="texts">
+        <div class="text">
+          <h3>Free, open, simple</h3>
+          <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        </div>
+
+        <div class="text">
+          <h3>Powerful tooling</h3>
+          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
+            but capable of producing even the most complicated sites.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-footer">
+      <div class="logo">
+        <a href="#">
+          <img src="images/logo.svg" alt="site logo">
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Product</h4>
+        <a href="#">Overview</a>
+        <a href="#">Pricing</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Features</a>
+        <a href="#">Integrations</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/AlvaroEmanuel20" target="_blank">Álvaro Emanuel</a>.
+    </div>
+  </footer>
+
+  <script src="js/dropdown.min.js"></script>
+  <script src="js/menumobile.min.js"></script>
+</body>
+</html>
